@@ -1,0 +1,61 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Trip",
+  "name": "Ruta Sur",
+  "departureTime": "2023-11-09",
+  "arrivalTime": "2023-11-10",
+  "itinerary": [
+    {
+      "@type": "Hotel",
+      "name": "Hotel en el sur",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Productos a recoger",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "Thing",
+              "name": "Ropa"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "Thing",
+              "name": "Organica"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Hotel",
+      "name": "Hotel en el norte",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Productos a recoger",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "Thing",
+              "name": "Ropa"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "Thing",
+              "name": "Plastico"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
