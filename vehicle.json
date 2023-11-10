@@ -1,0 +1,23 @@
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Vehicle",
+  "fuelType": "Electric",
+    "manufacturer": {
+    "@type": "Organization",
+    "name": "Gobierno de Canarias"
+  },
+  "vehicleTransmission": "Automatic",
+  "numberOfDoors": 4,
+  "fuelEfficiency": {
+    "@type": "QuantitativeValue",
+    "value": 100,
+    "unitCode": "MPG"
+  },
+  "vehicleSeatingCapacity": 5,
+  "vehicleEngine": {
+    "@type": "EngineSpecification",
+    "engineType": "Electric"
+  }
+}
+}</script>
