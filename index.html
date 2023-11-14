@@ -7,10 +7,182 @@
 </head>
 <body>
 
-    <script type="application/ld+json" src="hotel.json"></script>
-    <script type="application/ld+json" src="ruta.json"></script>
-    <script type="application/ld+json" src="rating.json"></script>
-    <script type="application/ld+json" src="reservation.json"></script>
-    <script type="application/ld+json" src="sell.json"></script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Hotel",
+            "name": "Hotel Vinnci Seleccion La Plantacion del Sur",
+            "description": "Simplemente un hotel en el sur.",
+            "address": {
+              "@type": "PostalAddress",
+              "addressCountry": "Spain",
+              "addressLocality": "Costa Adeje",
+              "addressRegion": "Santa Cruz de Tenerife",
+              "postalCode": "38670",
+              "streetAddress": "Roque Nublo"
+            },
+            "telephone": "+34 922717733",
+            "photo": "https://lh3.googleusercontent.com/gps-proxy/AFm_dcRRcdhCOLH08MZqpZaJ7EnwyfpDI19lg-ErjHR3C43CenklDg48ObHmBNMVIHGSgHJT_OJ3XvOgkiWHxt6jVN20itwL33hTiyqj-QditykCCcDkNv3RHBcUY-_OLxSmMxJscewIcLINspx-QY8L-h4Rk54RxF6fjKPEVmcxUDOzf78pmJwn1rdn=w287-h192-n-k-rw-no-v1",
+            "numberOfRooms": 165
+        }
+    </script>
+
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Review",
+            "reviewBody": "Este producto es excelente, cumplió con todas mis expectativas.",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": 5,
+              "bestRating": 5
+            },
+            "itemReviewed": {
+              "@type": "Product",
+              "name": "Sillon de Cuero",
+              "image": "https://esempi.com.ar/wp-content/uploads/2021/08/sillon-de-cuero-marron-esempi.jpg",
+              "offers": {
+                "@type": "Offer",
+                "price": 0.00,
+                "priceCurrency": "EUR",
+                "availability": "http://schema.org/InStock"
+              }
+            },
+            "author": {
+              "@type": "Person",
+              "name": "H10 Big Sur"
+            },
+            "datePublished": "2023-11-10T14:30:00"
+        }
+    </script>
+
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Product",
+            "name": "Sillon de cuero",
+            "description": "Sillon usado pero en buen estado",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4aUz5h20JveL987_4q2U9GoeHS5K3ORRLwg&usqp=CAU",
+            "offers": {
+              "@type": "Offer",
+              "price": 0.0,
+              "priceCurrency": "EUR",
+              "availability": "http://schema.org/InStock"
+            }
+        }
+    </script>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Trip",
+            "name": "Ruta Sur",
+            "departureTime": "2023-11-09",
+            "arrivalTime": "2023-11-10",
+            "itinerary": [
+              {
+                "@type": "Hotel",
+                "name": "Hotel en el sur",
+                "hasOfferCatalog": {
+                  "@type": "OfferCatalog",
+                  "name": "Productos a recoger",
+                  "itemListElement": [
+                    {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "item": {
+                        "@type": "Thing",
+                        "name": "Ropa"
+                      }
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "item": {
+                        "@type": "Thing",
+                        "name": "Organica"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "@type": "Hotel",
+                "name": "Hotel en el norte",
+                "hasOfferCatalog": {
+                  "@type": "OfferCatalog",
+                  "name": "Productos a recoger",
+                  "itemListElement": [
+                    {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "item": {
+                        "@type": "Thing",
+                        "name": "Ropa"
+                      }
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "item": {
+                        "@type": "Thing",
+                        "name": "Plastico"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+        }
+    </script>
+
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Notification",
+            "description": "Tu sillon de cuero será recogido próximamente. Por favor, prepáralo para su recolección.",
+            "datePublished": "2023-11-15T10:00:00",
+            "publisher": {
+              "@type": "Organization",
+              "name": "Servicio de Recogida SecondLife",
+              "email": "contacto@secondlife.com",
+              "telephone": "68778899",
+              "url": "https://www.secondlife.com"
+            },
+            "potentialAction": {
+              "@type": "ReserveAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://www.secondlife.com/reserve_pickup?product=SillonCuero",
+                "inLanguage": "es",
+                "actionPlatform": [
+                  "http://schema.org/DesktopWebPlatform",
+                  "http://schema.org/IOSPlatform",
+                  "http://schema.org/AndroidPlatform"
+                ]
+              },
+              "result": {
+                "@type": "Reservation",
+                "reservationFor": {
+                  "@type": "Product",
+                  "name": "Sillon de Cuero",
+                  "image": "https://esempi.com.ar/wp-content/uploads/2021/08/sillon-de-cuero-marron-esempi.jpg",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": 0.00,
+                    "priceCurrency": "EUR",
+                    "availability": "http://schema.org/InStock"
+                  }
+                },
+                "reservationStatus": "http://schema.org/Confirmed",
+                "underName": {
+                  "@type": "Person",
+                  "name": "Pedro",
+                  "email": "pedro@gmail.com"
+                }
+              }
+            }
+        }
+    </script>
 </body>
 </html>
