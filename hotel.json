@@ -1,0 +1,17 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Hotel",
+  "name": "Hotel Vinnci Seleccion La Plantacion del Sur",
+  "description": "Simplemente un hotel en el sur.",
+  "address": {
+  "@type": "PostalAddress",
+  "addressCountry": "Spain",
+  "addressLocality": "Costa Adeje",
+  "addressRegion": "Santa Cruz de Tenerife",
+  "postalCode": "38670",
+  "streetAddress": "Roque Nublo"
+},
+  "telephone": "+34 922717733",
+  "photo": "https://lh3.googleusercontent.com/gps-proxy/AFm_dcRRcdhCOLH08MZqpZaJ7EnwyfpDI19lg-ErjHR3C43CenklDg48ObHmBNMVIHGSgHJT_OJ3XvOgkiWHxt6jVN20itwL33hTiyqj-QditykCCcDkNv3RHBcUY-_OLxSmMxJscewIcLINspx-QY8L-h4Rk54RxF6fjKPEVmcxUDOzf78pmJwn1rdn=w287-h192-n-k-rw-no-v1",
+  "numberOfRooms": 165
+}
