@@ -1,0 +1,26 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Review",
+  "reviewBody": "Este producto es excelente, cumplió con todas mis expectativas.",
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": 5,
+    "bestRating": 5
+  },
+  "itemReviewed": {
+    "@type": "Product",
+    "name": "Sillon de Cuero",
+    "image": "https://esempi.com.ar/wp-content/uploads/2021/08/sillon-de-cuero-marron-esempi.jpg",
+    "offers": {
+      "@type": "Offer",
+      "price": 0.00,
+      "priceCurrency": "EUR",
+      "availability": "http://schema.org/InStock"
+    }
+  },
+  "author": {
+    "@type": "Person",
+    "name": "H10 Big Sur"
+  },
+  "datePublished": "2023-11-10T14:30:00"
+}

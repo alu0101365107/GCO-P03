@@ -1,0 +1,13 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Product",
+  "name": "Sillon de cuero",
+  "description": "Sillon usado pero en buen estado",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4aUz5h20JveL987_4q2U9GoeHS5K3ORRLwg&usqp=CAU",
+  "offers": {
+    "@type": "Offer",
+    "price": 0.0,
+    "priceCurrency": "EUR",
+    "availability": "http://schema.org/InStock"
+  }
+}

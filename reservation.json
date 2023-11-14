@@ -1,0 +1,46 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Notification",
+  "description": "Tu sillon de cuero será recogido próximamente. Por favor, prepáralo para su recolección.",
+  "datePublished": "2023-11-15T10:00:00",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Servicio de Recogida SecondLife",
+    "email": "contacto@secondlife.com",
+    "telephone": "68778899",
+    "url": "https://www.secondlife.com"
+  },
+  "potentialAction": {
+    "@type": "ReserveAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://www.secondlife.com/reserve_pickup?product=SillonCuero",
+      "inLanguage": "es",
+      "actionPlatform": [
+        "http://schema.org/DesktopWebPlatform",
+        "http://schema.org/IOSPlatform",
+        "http://schema.org/AndroidPlatform"
+      ]
+    },
+    "result": {
+      "@type": "Reservation",
+      "reservationFor": {
+        "@type": "Product",
+        "name": "Sillon de Cuero",
+        "image": "https://esempi.com.ar/wp-content/uploads/2021/08/sillon-de-cuero-marron-esempi.jpg",
+        "offers": {
+          "@type": "Offer",
+          "price": 0.00,
+          "priceCurrency": "EUR",
+          "availability": "http://schema.org/InStock"
+        }
+      },
+      "reservationStatus": "http://schema.org/Confirmed",
+      "underName": {
+        "@type": "Person",
+        "name": "Pedro",
+        "email": "pedro@gmail.com"
+      }
+    }
+  }
+}
