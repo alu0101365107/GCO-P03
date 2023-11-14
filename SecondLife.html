@@ -7,29 +7,10 @@
 </head>
 <body>
 
-    <h1>SecondLife</h1>
-
-    <div id="json-container"></div>
-
-    <script>
-        // Array con los nombres de tus archivos JSON
-        const jsonFiles = ['hotel.json', 'rating.json', 'reservation.json', 'ruta.json', 'sell.json'];
-
-        // Función para cargar y mostrar el contenido de un archivo JSON
-        async function loadAndDisplayJSON(fileName) {
-            try {
-                const response = await fetch(fileName);
-                const jsonData = await response.json();
-                document.getElementById('json-container').innerHTML += `<h2>${fileName}</h2>`;
-                document.getElementById('json-container').innerHTML += `<pre>${JSON.stringify(jsonData, null, 2)}</pre>`;
-            } catch (error) {
-                console.error(`Error cargando ${fileName}: ${error.message}`);
-            }
-        }
-        jsonFiles.forEach(fileName => {
-            loadAndDisplayJSON(fileName);
-        });
-    </script>
-
+    <script type="application/ld+json" src="hotel.json"></script>
+    <script type="application/ld+json" src="ruta.json"></script>
+    <script type="application/ld+json" src="rating.json"></script>
+    <script type="application/ld+json" src="reservation.json"></script>
+    <script type="application/ld+json" src="sell.json"></script>
 </body>
 </html>
